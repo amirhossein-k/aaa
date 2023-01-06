@@ -5,7 +5,6 @@ import { userLoginReducer, userRegisterReducer } from "./reducers/userReducers";
 import {
   productCreateReducer,
   productListReducer,
-  productDeleteReducer,
 } from "./reducers/productReducer";
 
 const middleware = [thunk];
@@ -15,7 +14,6 @@ const reducer = combineReducers({
   uerRegister: userRegisterReducer,
   productCreate: productCreateReducer,
   productList: productListReducer,
-  productDelete: productDeleteReducer,
 });
 ////////////
 const userInformStorage = localStorage.getItem("userInfo")
