@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectFade } from "swiper";
 
 import "../../styles/Swipper.css";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/thumbs";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/thumbs";
 const Swipper = () => {
   const swiperNavPrevRef = useRef(null);
   const swiperNavNextRef = useRef(null);
@@ -18,7 +18,7 @@ const Swipper = () => {
         // navigation={true}
         navigation={{
           prevEl: swiperNavPrevRef.current,
-          nextEl: swiperNavNextRef.current
+          nextEl: swiperNavNextRef.current,
         }}
         // effect={'fade'}
 
